@@ -1,3 +1,3 @@
 # AdvancedDSA
-it has advanced data structures in it
-author shruti agnihotri
+This has advanced data structures in it.
+Author-shruti agnihotri
