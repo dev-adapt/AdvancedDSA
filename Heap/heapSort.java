@@ -1,27 +1,33 @@
 package Heap;
-
 import java.util.*;
-
-public class heapifyMIN{
+public class heapSort {
+    static void heapSorting(List<Integer>heap){
+        heapify(heap);
+        int n=heap.size()-1;
+        for(int i=n;i>0;i--){
+            swap(heap, 0, i);
+            pushDown(heap,0, i-1);
+        }
+    }
     static void heapify(List<Integer>heap){
         int firstNonLeafNode=((heap.size()-1)-1)/2; //parent=(i-1)/2
         for(int i=firstNonLeafNode;i>=0;i--){
-            pushDown(heap, i);
+            pushDown(heap, i,heap.size()-1);
         }
     }
-    static void pushDown(List<Integer>heap,int i){
-        int last=heap.size()-1;
+    static void pushDown(List<Integer>heap,int i,int n){
+      if(i==n)return;
         int lchild=(i*2)+1,rchild=(i*2)+2;
+        int biggest=i;
         if(i>=heap.size()-1)return;
-        if(lchild<=last&&heap.get(lchild)<heap.get(i)){
-        swap(heap, lchild, i);
-        pushDown(heap, lchild);
+        if(lchild<=n&&heap.get(lchild)>heap.get(biggest)){
+        biggest=lchild;
         }
-        if(rchild<=last&&heap.get(rchild)<heap.get(i)){
-        swap(heap, rchild, i);
-        pushDown(heap, rchild);
-        }
-        
+        if(rchild<=n&&heap.get(rchild)>heap.get(biggest)){
+       biggest=rchild;
+        }if(biggest==i)return;
+       swap(heap, biggest, i);
+       pushDown(heap, biggest,n);
     }
     static void swap(List<Integer>heap,int l,int r){
         int temp=heap.get(l);
@@ -37,7 +43,7 @@ public class heapifyMIN{
         heap.add(15);
         heap.add(5);
         System.out.println(heap);
-        heapify(heap);
+        heapSorting(heap);
         System.out.println(heap);
     }
- }
+}
