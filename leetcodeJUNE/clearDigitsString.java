@@ -1,6 +1,6 @@
 package leetcodeJUNE;
 
-public class clearDigits {
+public class clearDigitsString {
     static  String clearDigits(String s) {
         StringBuilder sb = new StringBuilder();
         for (int i=0;i<s.length();i++) {

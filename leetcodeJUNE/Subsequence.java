@@ -1,6 +1,6 @@
 package leetcodeJUNE;
 
-public class isSubsequence {
+public class Subsequence {
     static  boolean isSubsequence(String s, String t) {
         int idx=0;
         if(s.length()==0)return true;
@@ -14,8 +14,7 @@ public class isSubsequence {
     public static void main(String[] args) {
         String s = "b", t = "abcc";
         System.out.println(isSubsequence(s, t));
-        int n=225;
-
+       
     }
 }
 

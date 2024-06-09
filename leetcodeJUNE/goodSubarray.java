@@ -1,6 +1,5 @@
 package leetcodeJUNE;
 
-import java.util.*;
 
 //523
 public class goodSubarray {
