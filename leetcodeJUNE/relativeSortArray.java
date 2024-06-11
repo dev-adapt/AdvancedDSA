@@ -1,7 +1,5 @@
 package leetcodeJUNE;
-
-import java.util.Arrays;
-
+//1122
 public class relativeSortArray {
     static int[] relativeSort(int[] arr1, int[] arr2) {
         int arr[]=new int[1010];

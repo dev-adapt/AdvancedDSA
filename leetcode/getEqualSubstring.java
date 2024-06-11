@@ -1,7 +1,5 @@
 package leetcode;
 
-import java.util.Arrays;
-
 public class getEqualSubstring {
    static int equalSubstring(String s, String t, int maxCost) {
        // Convert the problem into a min subarray problem
