@@ -31,6 +31,7 @@ public class subarraySums {
     public static void main(String[] args) {
         int[]  nums = {1,-10,5};
         int k = 9;
+      
         System.out.println(subarraysDivByK(nums, k));
     }
 }
