@@ -1,4 +1,4 @@
-package BST;
+package TREES;
 public class Min_Distance_bw_nodes {
     public static class Node{
         int data;
