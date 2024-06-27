@@ -10,7 +10,7 @@ public class largestLocal {
         }
     }
 
-    static int[][] largestLocal(int[][] grid){
+    static int[][] largestLocals(int[][] grid){
         int n = grid.length;
         int[][] res = new int[n - 2][n - 2];
         for(int i = 1; i < n - 1; ++i) {
@@ -29,7 +29,7 @@ public class largestLocal {
     }
     public static void main(String[] args) {
        int[][] grid = {{9,9,8,1},{5,6,2,6},{8,2,6,4},{6,2,2,2}};
-       int[][]ans=largestLocal(grid);
+       int[][]ans=largestLocals(grid);
        printingArray(ans);
     }
 }
