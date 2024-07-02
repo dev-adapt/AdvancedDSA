@@ -1,7 +1,7 @@
 package LeetcodeJuly;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+
 
 public class intersectionTwoArray {
     public static int[] intersect(int[] nums1, int[] nums2) {
