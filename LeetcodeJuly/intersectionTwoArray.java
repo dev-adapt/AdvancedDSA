@@ -6,10 +6,6 @@ import java.util.ArrayList;
 public class intersectionTwoArray {
     public static int[] intersect(int[] nums1, int[] nums2) {
         ArrayList<Integer>list=new ArrayList<>();
-        // HashMap<Integer,Integer>mp1=new HashMap<>();
-        // HashMap<Integer,Integer>mp2=new HashMap<>();
-        // for(int i:nums1)mp1.put(i,mp1.getOrDefault(i,0)+1);
-        // for(int i:nums2)mp2.put(i,mp2.getOrDefault(i,0)+1);
         int arr1[]=new int[1001];
         int arr2[]=new int[1001];
         for(int i:nums1)arr1[i]++;
