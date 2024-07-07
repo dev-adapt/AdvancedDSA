@@ -57,6 +57,7 @@ public class maxMeetingsInOneRoom {
     }
     public static void main(String[] args) {
        int [][] events = {{1,10},{2,2},{2,2},{2,2},{2,2}};
+      // System.out.println(0%1);
        System.out.println(maxEvents(events));
     }
 }

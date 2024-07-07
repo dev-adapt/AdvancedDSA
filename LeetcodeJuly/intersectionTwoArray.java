@@ -1,4 +1,3 @@
-package LeetcodeJuly;
 
 import java.util.ArrayList;
 
