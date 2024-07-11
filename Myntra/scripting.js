@@ -5,12 +5,15 @@ const home_section = document.querySelector('.homeliving');
 const beauty_section = document.querySelector('.beauty');
 const ramp_section = document.querySelector('.ramp');
 
+
+
 const men_section_items = document.querySelector('.men-section-items');
 const women_section_items = document.querySelector('.women-section-items');
 const kids_section_items = document.querySelector('.kids-section-items');
 const home_section_items = document.querySelector('.home-section-items');
 const beauty_section_items = document.querySelector('.beauty-section-items');
 const ramp_section_items = document.querySelector('.ramp-section-items');
+const exploreRamp = document.querySelector('.exploreRamp');
 
 const container_ele = document.querySelector('.container');
 var bodyele = document.getElementsByTagName("BODY");
@@ -49,9 +52,13 @@ beauty_section.onmouseover = () => {
 beauty_section.onmouseout = () => {
     beauty_section_items.classList.add('visibility');
 }
-ramp_section.onmouseover = () => {
+ramp_section.onmouseenter = () => {
     ramp_section_items.classList.remove('visibility');
 }
-ramp_section.onmouseout = () => {
+ramp_section_items.onmouseleave =() =>{
     ramp_section_items.classList.add('visibility');
 }
+function openPage() {
+    // Redirect to another page
+    window.location.href = 'ramp.html';
+  }

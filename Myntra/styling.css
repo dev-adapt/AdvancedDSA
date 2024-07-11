@@ -396,10 +396,10 @@
     height:510px;
     /*top: 232px;  to be removed */
     right: 1px;
-    left: 130px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-bottom: 15px;
+    left: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
     z-index: 10;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   }
@@ -440,10 +440,36 @@
   }
   .visibility{
     display: none;
-    
   }
   .category-heading{
     color: #ee6780;
     font-weight: bold;
     font-size: 14px;
   }
+  .btn {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f8f5f5;
+    color: rgb(177, 107, 131);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .btn:hover{
+    background-color: #ee6780;
+    color: #ffffff;
+  }
+.exploreRamp:hover{
+  opacity:80%;
+}
+.bar:hover{
+  background-color: #ef0865;
+  opacity:70%;
+}
+  
