@@ -184,6 +184,7 @@
   }
   
   .icons {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     margin: 0px 42px;
   }
@@ -403,6 +404,9 @@
     z-index: 10;
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   }
+  .ramp-section-items:hover{
+    background-color:#eacbde8d;
+  }
 
   .col-1{
     margin-right: 70px;
@@ -462,14 +466,13 @@
     text-align: center;
   }
   .btn:hover{
-    background-color: #ee6780;
+    background-color: #ff355a;
     color: #ffffff;
   }
-.exploreRamp:hover{
-  opacity:80%;
-}
+
 .bar:hover{
-  background-color: #ef0865;
-  opacity:70%;
+  background-color: #f70c6e;
+  color: #ffffff;
+  
 }
   
