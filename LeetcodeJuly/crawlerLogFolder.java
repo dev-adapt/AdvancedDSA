@@ -4,8 +4,8 @@ public class crawlerLogFolder {
        int count=0;
         for(String i:logs){
             if(i.equals("../"))count--;
-            else if(i.equals("./"))count=count;
-            else count++;
+            else if(!i.equals("./"))count++;
+           // else count++;
             if(count<0)count=0;
         }
         return count<0?0:count;
