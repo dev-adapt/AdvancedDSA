@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <style>
+        body{
+            background-color: rgb(23, 41, 48);
+            color: rgb(125, 141, 153);
+            text-align: center;
+            text-decoration: underline;
+            
+        }
+        .text{
+            font-size: 30px;
+        }
+    </style>
+    <title>Season theme</title>
+
+</head>
+<body>
+    <h1>CURRENTLY RUNNING THEME</h1>
+   
+        <p>
+            <img alt="" src="monsoon.png" 
+                style="height: 685px; width: 1198px" id="imgClickAndChange" onclick="changeImage()">
+        </p>
+        <p>
+            
+        </p>
+     
+    
+    <script>
+function changeImage() {
+    var image = document.getElementById('imgClickAndChange');
+    if (image.src.match("monsoon.png")) {
+        image.src = "monsoonBlur.png"; // Change to your second image path
+    } else {
+        image.src = "monsoon.png"; // Change to your first image path
+    }
+}
+            </script>
+</body>
+
+</html>
