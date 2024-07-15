@@ -55,3 +55,34 @@ public class delete{
         return ans;
     }
 }
+
+def calculate_relevance_score(submission, theme):
+    score = 0
+    # Check if the submission items match the theme keywords
+    theme_keywords = theme.split()  # Assume theme is a string of keywords
+    for item in submission['items']:
+        for keyword in theme_keywords:
+            if keyword.lower() in item['description'].lower():
+                score += 1
+    
+    # Add points for completeness
+    if submission['top_wear'] and submission['bottom_wear'] and submission['shoes'] and submission['accessories']:
+        score += 5
+
+    # Add points for creativity (e.g., based on admin ratings or user votes)
+    score += submission.get('creativity_score', 0)
+    return score
+
+# Example usage
+submission = {
+    'items': [{'description': 'Red floral top'}, {'description': 'Blue jeans'}, {'description': 'White sneakers'}],
+    'top_wear': True,
+    'bottom_wear': True,
+    'shoes': True,
+    'accessories': ['Watch', 'Bracelet'],
+    'creativity_score': 3
+}
+theme = "floral red casual"
+score = calculate_relevance_score(submission, theme)
+print(f"Relevance Score: {score}")
+
