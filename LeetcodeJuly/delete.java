@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashSet;
+import java.util.*;
+
 
 public class delete{
     public int minimumCost(int m, int n, int[] x, int[] y) {
