@@ -1,4 +1,4 @@
- package leetcodeAugust;
+
 public class mappingNumber {
     public static int minimumPushes(String word) {
         int count=0;

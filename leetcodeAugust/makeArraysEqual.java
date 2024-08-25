@@ -1,4 +1,4 @@
-package leetcodeAugust;
+
 
 import java.util.Arrays;
 public class makeArraysEqual {
