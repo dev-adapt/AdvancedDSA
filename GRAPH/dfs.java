@@ -3,12 +3,12 @@ package GRAPH;
 import java.util.ArrayList;
 
 public class dfs {
-    public static void dfs(int node,boolean vis[],ArrayList<ArrayList<Integer>> adj,ArrayList<Integer>ls){
+    public static void dfss(int node,boolean vis[],ArrayList<ArrayList<Integer>> adj,ArrayList<Integer>ls){
         vis[node]=true;
         ls.add(node);
         for(int it:adj.get(node)){
             if(!vis[it]){
-                dfs(it, vis, adj, ls);
+                dfss(it, vis, adj, ls);
             }
         }
     }
@@ -18,7 +18,7 @@ public class dfs {
         vis[0]=true;
 
         ArrayList<Integer> ls = new ArrayList<>();
-        dfs(0, vis, adj, ls);
+        dfss(0, vis, adj, ls);
         return ls;
     }
     public static void main(String[] args) {
