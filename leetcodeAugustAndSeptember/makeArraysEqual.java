@@ -1,4 +1,4 @@
-
+package leetcodeAugustAndSeptember;
 
 import java.util.Arrays;
 public class makeArraysEqual {
