@@ -1,7 +1,7 @@
 package leetcodeAugustAndSeptember;
 
 public class longestSubarray {
-    public static int longestSubarray(int[] nums) {
+    public static int longestSubarray1(int[] nums) {
         int max=0,count=1,count2=1;
         int ans=0,ans2=0,len=nums.length;
         for(int i=0;i<len;i++){
@@ -56,6 +56,6 @@ public class longestSubarray {
     }
     public static void main(String[] args) {
         int nums[]={586730,586730,67,586730,586730,586730,586730};
-         System.out.println(longestSubarray(nums));
+         System.out.println(longestSubarray1(nums));
     }
 }

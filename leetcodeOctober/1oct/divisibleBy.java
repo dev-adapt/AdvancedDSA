@@ -1,6 +1,3 @@
-package leetcodeAugustAndSeptember;
-
-import java.util.ArrayList;
 
 public class divisibleBy {
     public boolean canArrange(int[] arr, int k) {

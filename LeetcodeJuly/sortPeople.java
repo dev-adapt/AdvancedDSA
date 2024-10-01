@@ -1,5 +1,5 @@
 public class sortPeople {
-    public static String[] sortPeople(String[] names, int[] heights) {
+    public static String[] sortPeople1(String[] names, int[] heights) {
        int idx=0;
        int n=names.length;
         while(idx<n){
@@ -25,7 +25,7 @@ public class sortPeople {
     public static void main(String[] args) {
        String[] names = {"Mary","John","Emma"};
        int[] heights = {180,165,170};
-       sortPeople(names, heights);
+       sortPeople1(names, heights);
       for(String i:names)System.out.println(i+" ");
     }
 }

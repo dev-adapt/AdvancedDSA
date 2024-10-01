@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>October Coding Progress Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #a2c8ed;
+      color: #082e5a;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 55px;
+      margin: 20px 0;
+      color: #082e5a;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+      max-width: 95%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    .day {
+      background-color: #b6e3ee;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .day-header {
+      font-weight: bold;
+      margin-bottom: 5px;
+     
+    }
+
+    .progress-input {
+      width: 90%;
+      height:30px;
+      margin: 5px 0;
+      background-color: #f8f6d3;
+      color: #082e5a;
+    }
+
+    .notes-input {
+      width: 90%;
+      margin-top: 5px;
+      background-color: #f8f6d3;
+      color: #082e5a;
+      height: 250px;
+    }
+
+    .day-number {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+   
+    }
+
+    /* Style for the days of the week header */
+    .day-of-week {
+      text-align: center;
+      font-weight: bold;
+      padding: 10px 0;
+     
+    }
+
+    /* Optional styling for hover effect */
+    .day:hover {
+      background-color: #f0dee4;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>October 2024 - Coding Progress Tracker</h1>
+
+  <!-- Calendar Header -->
+  <div class="calendar">
+    <div class="day-of-week">Sun</div>
+    <div class="day-of-week">Mon</div>
+    <div class="day-of-week">Tue</div>
+    <div class="day-of-week">Wed</div>
+    <div class="day-of-week">Thu</div>
+    <div class="day-of-week">Fri</div>
+    <div class="day-of-week">Sat</div>
+
+    <!-- October Calendar -->
+    <!-- Add empty days for the first week -->
+    <div></div><div></div> <!-- For days from previous month -->
+
+    
+
+    <!-- Continue adding the rest of the days in a similar manner... -->
+    <!-- You would need to add up to 31st October with similar day boxes -->
+
+  <!-- Now, starting the actual days from 1st October -->
+  <div class="day">
+    <div class="day-header">Tue</div>
+    <span class="day-number">1</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Wed</div>
+    <span class="day-number">2</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Thu</div>
+    <span class="day-number">3</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Fri</div>
+    <span class="day-number">4</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Sat</div>
+    <span class="day-number">5</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Sun</div>
+    <span class="day-number">6</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Mon</div>
+    <span class="day-number">7</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+
+  <!-- Week 2 -->
+  <div class="day">
+    <div class="day-header">Tue</div>
+    <span class="day-number">8</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Wed</div>
+    <span class="day-number">9</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Thu</div>
+    <span class="day-number">10</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Fri</div>
+    <span class="day-number">11</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Sat</div>
+    <span class="day-number">12</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Sun</div>
+    <span class="day-number">13</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Mon</div>
+    <span class="day-number">14</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+
+  <!-- Week 3 -->
+  <div class="day">
+    <div class="day-header">Tue</div>
+    <span class="day-number">15</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Wed</div>
+    <span class="day-number">16</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Thu</div>
+    <span class="day-number">17</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Fri</div>
+    <span class="day-number">18</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Sat</div>
+    <span class="day-number">19</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Sun</div>
+    <span class="day-number">20</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Mon</div>
+    <span class="day-number">21</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+
+  <!-- Week 4 -->
+  <div class="day">
+    <div class="day-header">Tue</div>
+    <span class="day-number">22</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Wed</div>
+    <span class="day-number">23</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Thu</div>
+    <span class="day-number">24</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Fri</div>
+    <span class="day-number">25</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Sat</div>
+    <span class="day-number">26</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Sun</div>
+    <span class="day-number">27</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Mon</div>
+    <span class="day-number">28</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+
+  <!-- Week 5 -->
+  <div class="day">
+    <div class="day-header">Tue</div>
+    <span class="day-number">29</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Wed</div>
+    <span class="day-number">30</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+  <div class="day">
+    <div class="day-header">Thu</div>
+    <span class="day-number">31</span>
+     <textarea class="progress-input" placeholder="Progress"></textarea>
+    <textarea class="notes-input" placeholder="Notes"></textarea>
+  </div>
+</div>
+
+</body>
+</html>
