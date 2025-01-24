@@ -15,7 +15,7 @@ public class union {
         }
         
         union.addAll(set);
-       Collections.sort(union);
+      
         return union;
     }
 }
