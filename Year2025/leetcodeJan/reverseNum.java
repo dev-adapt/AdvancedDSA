@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 public class reverseNum {
     public static int reverse(int x) {
