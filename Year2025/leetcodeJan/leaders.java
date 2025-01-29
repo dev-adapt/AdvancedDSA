@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class leaders {
-       static ArrayList<Integer> leaders(int arr[]) {
+       static ArrayList<Integer> findLeaders(int arr[]) {
         // code here
         ArrayList<Integer> list = new ArrayList<>();
         int n=arr.length , max=arr[n-1];

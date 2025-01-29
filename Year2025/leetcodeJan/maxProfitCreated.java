@@ -1,4 +1,4 @@
-public class maxProfit {
+public class maxProfitCreated {
     public static int maxProfit(int[] prices) {
         int n=prices.length;
         int min=Integer.MAX_VALUE,idx=0;

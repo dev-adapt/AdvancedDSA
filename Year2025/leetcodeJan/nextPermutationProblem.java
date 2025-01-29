@@ -1,4 +1,4 @@
-public class nextPermutation {
+public class nextPermutationProblem {
         private void reverse(int[] nums, int start, int end) {
         while (start < end) {
             int temp = nums[start];

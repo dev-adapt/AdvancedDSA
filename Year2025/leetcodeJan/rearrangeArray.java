@@ -1,5 +1,5 @@
 public class rearrangeArray {
-    public int[] rearrangeArray(int[] nums) {
+    public int[] rearrange(int[] nums) {
         int n=nums.length;
         int ans[]=new int[n];
         int odd=1,even=0;
