@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+
 
 public class ceilAndFloorInSortedArray {
     public static int[] getFloorAndCeil(int[] a, int n, int x) {
