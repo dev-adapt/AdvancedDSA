@@ -1,5 +1,5 @@
 public class nthRoot {
-    public int nthRoot(int n, int m) {
+    public int nthRootNumber(int n, int m) {
         // code here
          int low = 1, high = m;
         while (low <= high) {

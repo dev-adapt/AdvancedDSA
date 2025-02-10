@@ -1,5 +1,5 @@
 public class smallestDivisor {
-    public int smallestDivisor(int[] nums, int threshold) {
+    public int Divisor(int[] nums, int threshold) {
         int low=1,high=1000000;
         while(low<=high){
             int mid=(low+high)/2;
