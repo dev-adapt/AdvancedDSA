@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 public class peakElementIn2Darray {
     public int[] findPeakGrid(int[][] mat) {
         int n = mat.length;
@@ -10,7 +11,7 @@ public class peakElementIn2Darray {
 
             int left=mid-1>0?mat[Row][mid-1]:-1;
             int right=mid+1<m?mat[Row][mid+1]:-1;
-            
+
             int curr=mat[Row][mid];
 
             if(curr>left && curr>right)return new int[]{Row,mid};

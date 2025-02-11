@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 public class findSingleElt {
     public int singleNonDuplicate(int[] nums) {
         int n=nums.length;

@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 public class matrixMedian2Darray {
     static int upperBound(int[] arr, int x, int n) {
         int low = 0, high = n - 1;

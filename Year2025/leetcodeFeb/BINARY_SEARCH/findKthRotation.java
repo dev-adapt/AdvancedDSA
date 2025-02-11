@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 public class findKthRotation {
     public static int findKRotation(int[] arr) {
         int low = 0, high = arr.length - 1;

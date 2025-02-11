@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 public class findTargetIn2DsortedArray {
     public boolean searchMatrix(int[][] a, int target) {
         int n=a.length,m=a[0].length;

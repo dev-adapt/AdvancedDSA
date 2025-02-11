@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 public class medianTwoSortedArrays {
     public double findMedianSortedArrays(int[] a, int[] b) {
         int n1 = a.length;

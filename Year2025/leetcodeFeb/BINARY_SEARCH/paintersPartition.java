@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 public class paintersPartition  {
     public int splitArray(int[] nums, int k) {
         int low=Integer.MAX_VALUE,high=nums[0];

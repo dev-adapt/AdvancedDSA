@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 public class shipCarryingWeights {
     public static int shipWithinDays(int[] weights, int days) {
       //  int low=1,high=100000;

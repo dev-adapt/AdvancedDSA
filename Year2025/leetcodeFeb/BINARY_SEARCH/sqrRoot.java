@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 public class sqrRoot {
     int floorSqrt(int n) {
         // Your code here

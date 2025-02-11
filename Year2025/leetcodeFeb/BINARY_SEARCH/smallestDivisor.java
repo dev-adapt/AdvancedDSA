@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 public class smallestDivisor {
     public int Divisor(int[] nums, int threshold) {
         int low=1,high=1000000;

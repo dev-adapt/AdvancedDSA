@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 
 public class kokoEatingBanana {
     public static int calculateTotalHours(int[] v, int hourly,int h) {

@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 public class nthRoot {
     public int nthRootNumber(int n, int m) {
         // code here

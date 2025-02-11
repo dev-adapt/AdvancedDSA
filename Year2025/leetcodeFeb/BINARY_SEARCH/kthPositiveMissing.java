@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 public class kthPositiveMissing {
     public int findKthPositive(int[] arr, int k) {
         int n=arr.length;

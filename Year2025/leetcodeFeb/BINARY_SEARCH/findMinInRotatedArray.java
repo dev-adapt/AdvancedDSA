@@ -1,3 +1,4 @@
+package BINARY_SEARCH;
 public class findMinInRotatedArray {
     public int findMin(int[] nums) {
         int st=0,end=nums.length-1;
