@@ -37,12 +37,12 @@ public class verticalOrderTraversalOfBinaryTree {
     }
 
     // Function to perform vertical order traversal
-    public List<List<Integer>> findVertical( TreeNode root) {
+    public List<List<Integer>> verticalTraversal(TreeNode root) {
         // Map to store nodes based on vertical and level information
-        Map<Integer, Map<Integer, TreeSet<Integer>>> nodes = new TreeMap<>();
+        Map<Integer, Map<Integer, List<Integer>>> nodes = new TreeMap<>();
 
         // Queue for BFS traversal, each element is a pair containing node and its vertical and level information
-        Queue<Pair< TreeNode, Pair<Integer, Integer>>> todo = new LinkedList<>();
+        Queue<Pair<TreeNode, Pair<Integer, Integer>>> todo = new LinkedList<>();
 
         // Push the root node with initial vertical and level values (0, 0)
         todo.add(new Pair<>(root, new Pair<>(0, 0)));
@@ -50,8 +50,8 @@ public class verticalOrderTraversalOfBinaryTree {
         // BFS traversal
         while (!todo.isEmpty()) {
             // Retrieve the node and its vertical and level information from the front of the queue
-            Pair< TreeNode, Pair<Integer, Integer>> p = todo.poll();
-             TreeNode temp = p.getKey();
+            Pair<TreeNode, Pair<Integer, Integer>> p = todo.poll();
+            TreeNode temp = p.getKey();
 
             // Extract the vertical and level information
             int x = p.getValue().getKey(); // Vertical
@@ -59,8 +59,8 @@ public class verticalOrderTraversalOfBinaryTree {
 
             // Insert the node value into the corresponding vertical and level in the map
             nodes.computeIfAbsent(x, k -> new TreeMap<>())
-                 .computeIfAbsent(y, k -> new TreeSet<>())
-                 .add(temp.data);
+                 .computeIfAbsent(y, k -> new ArrayList<>()) // Use ArrayList instead of TreeSet
+                 .add(temp.val);
 
             // Process left child
             if (temp.left != null) {
@@ -75,10 +75,11 @@ public class verticalOrderTraversalOfBinaryTree {
 
         // Prepare the final result list by combining values from the map
         List<List<Integer>> ans = new ArrayList<>();
-        for (Map.Entry<Integer, Map<Integer, TreeSet<Integer>>> entry : nodes.entrySet()) {
+        for (Map.Entry<Integer, Map<Integer, List<Integer>>> entry : nodes.entrySet()) {
             List<Integer> col = new ArrayList<>();
-            for (TreeSet<Integer> set : entry.getValue().values()) {
-                col.addAll(set);
+            for (List<Integer> list : entry.getValue().values()) {
+                Collections.sort(list); // Ensure sorting before adding
+                col.addAll(list);
             }
             ans.add(col);
         }
