@@ -70,7 +70,7 @@ public class zigZagLevelOrderTraversal {
         return ans;
     }
     public int height(TreeNode root){
-        if(root == null) return 0;
+        if(root == null ||(root.left==null && root.right==null)) return 0;
         return 1 + Math.max(height(root.left), height(root.right));
     }
     public void nthLevel(TreeNode root,int n,List<Integer>arr){
