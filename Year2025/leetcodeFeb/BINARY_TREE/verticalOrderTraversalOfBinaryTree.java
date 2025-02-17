@@ -17,7 +17,7 @@ class Node {
     }
 }
 class Pair{
-    int 
+    int vertical
 }
 
 
