@@ -13,5 +13,5 @@ public class boundaryTraversal {
                 this.right = right;
             }
         }
-        public void boundary
+        public void boundaryDisplay
 }
