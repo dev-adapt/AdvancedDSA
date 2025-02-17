@@ -30,8 +30,9 @@ public class boundaryTraversal {
             if(root==null)return;
             if(root.left==null && root.right==null){
                 System.out.println(root.val);
-                return
+                return;
             }
+            
         }
         public void rightBoundary(TreeNode root){
             if(root==null)return;
