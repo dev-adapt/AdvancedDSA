@@ -34,6 +34,6 @@ public class boundaryTraversal {
             if(root.left==null && root.right==null)return;
             System.out.println(root.val);
             if(root.right!=null)rightBoundary(root.right);
-            else leftBoundary(root.right);
+            else rightBoundary(root.left);
         }
 }
