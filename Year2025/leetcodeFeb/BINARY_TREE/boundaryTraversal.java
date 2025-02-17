@@ -22,7 +22,7 @@ public class boundaryTraversal {
         public void leftBoundary(TreeNode root){
             if(root==null)return;
             if(root.left==null && root.right==null)return;
-
+            System.out.println(root);
             if(root.left!=null)leftBoundary(root.left);
             else leftBoundary(root.right);
         }
