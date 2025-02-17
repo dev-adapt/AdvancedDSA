@@ -61,7 +61,7 @@ public class topViewBinary {
             if (!mpp.containsKey(line)) {
                 mpp.put(line, node. val);
             }else{
-                mpp.
+                mpp.computeIfPresent()
             }
             
             // Process left child
