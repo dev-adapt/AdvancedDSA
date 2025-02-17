@@ -64,16 +64,12 @@ public class topViewBinary {
             
             // Process left child
             if (node.left != null) {
-                // Push the left child with a decreased
-                // vertical position into the queue
                 q.add(new Pair<>(node.left, line - 1));
             }
             
             // Process right child
             if (node.right != null) {
-                // Push the right child with an increased
-                // vertical position into the queue
-                q.add(new Pair<>(node.right, line + 1));
+                 q.add(new Pair<>(node.right, line + 1));
             }
         }
         
