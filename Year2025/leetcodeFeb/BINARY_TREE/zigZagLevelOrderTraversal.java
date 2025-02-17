@@ -62,8 +62,8 @@ public class zigZagLevelOrderTraversal {
         for(int i=1;i<=len;i++){
             List<Integer>arr=new ArrayList<>();
             if((i&1)!=0)
-            nthLevel(root, len, arr);
-            else nthLevel2(root, len, arr);
+            nthLevel(root, i, arr);
+            else nthLevel2(root, i, arr);
 
             ans.add(arr);
         }
