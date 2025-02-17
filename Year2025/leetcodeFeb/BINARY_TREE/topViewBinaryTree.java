@@ -8,6 +8,23 @@ import java.util.Queue;
 import java.util.TreeMap;
 
 public class topViewBinaryTree {
+    class Pair<T, U> {
+        T first;
+        U second;
+
+        public Pair(T first, U second) {
+            this.first = first;
+            this.second = second;
+        }
+
+        public T getKey() {
+            return first;
+        }
+
+        public U getValue() {
+            return second;
+        }
+    }
     public class Tree TreeNode {
             int val;
             Tree TreeNode left;
