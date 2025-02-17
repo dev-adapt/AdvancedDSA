@@ -16,15 +16,15 @@ class Node {
         right = null;
     }
 }
-class Pair{
-    int row;
-    int col;
+// class Pair{
+//     int row;
+//     int col;
 
-    public Pair(int row,int col){
-        row=this.row;
-        col=this.col;
-    }
-}
+//     public Pair(int row,int col){
+//         row=this.row;
+//         col=this.col;
+//     }
+// }
 
 
     // Function to perform vertical order traversal
