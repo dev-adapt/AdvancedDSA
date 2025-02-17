@@ -24,6 +24,8 @@ public class zigZagLevelOrderTraversal {
             if((i&1)==0)
             nthLevel(root, len, arr);
             else nthLevel2(root, len, arr);
+
+            ans.add(arr);
         }
     }
     public int height(TreeNode root){
