@@ -35,6 +35,6 @@ public class zigZagLevelOrderTraversal {
           arr.add(root.val);
           return;
          }
-         nthLevel(root, n, arr);
+         nthLevel(root.left, n, arr);
     }
 }
