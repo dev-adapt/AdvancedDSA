@@ -86,36 +86,9 @@ public class verticalOrderTraversalOfBinaryTree {
     }
 
     // Helper function to print the result
-    private static void printResult(List<List<Integer>> result) {
-        for (List<Integer> level : result) {
-            for (int node : level) {
-                System.out.print(node + " ");
-            }
-            System.out.println();
-        }
-    }
+   
 
-    public static void main(String[] args) {
-        verticalOrderTraversalOfBinaryTree solution = new verticalOrderTraversalOfBinaryTree();
-
-        // Creating a sample binary tree
-        Node root = solution.new Node(1);
-        root.left = solution.new Node(2);
-        root.left.left = solution.new Node(4);
-        root.left.right = solution.new Node(10);
-        root.left.left.right = solution.new Node(5);
-        root.left.left.right.right = solution.new Node(6);
-        root.right = solution.new Node(3);
-        root.right.right = solution.new Node(10);
-        root.right.left = solution.new Node(9);
-
-        // Get the Vertical traversal
-        List<List<Integer>> verticalTraversal = solution.findVertical(root);
-
-        // Print the result
-        System.out.print("Vertical Traversal: ");
-        printResult(verticalTraversal);
-    }
+    
 }
 
                             
