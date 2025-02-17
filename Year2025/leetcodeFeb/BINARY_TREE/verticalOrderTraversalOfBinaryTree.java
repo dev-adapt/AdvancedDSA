@@ -11,7 +11,7 @@ public class verticalOrderTraversalOfBinaryTree {
 
         // Constructor to initialize the node with a value
         public  TreeNode(int val) {
-            data = val;
+            val = val;
             left = null;
             right = null;
         }
