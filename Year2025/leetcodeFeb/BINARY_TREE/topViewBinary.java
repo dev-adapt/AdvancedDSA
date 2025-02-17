@@ -38,7 +38,7 @@ public class topViewBinary {
             }
         }
          public List<Integer> topView( TreeNode root) {
-        // List to store the result
+       
         List<Integer> ans = new ArrayList<>();
         
         // Check if the tree is empty
