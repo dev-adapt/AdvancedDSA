@@ -22,7 +22,7 @@ public class zigZagLevelOrderTraversal {
         for(int i=1;i<len;i++){
             List<Integer>arr=new ArrayList<>();
             if((i&1)==0)
-            
+            nthLevel(root, len, arr);
             else 
         }
     }
