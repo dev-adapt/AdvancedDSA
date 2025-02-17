@@ -13,5 +13,7 @@ public class boundaryTraversal {
                 this.right = right;
             }
         }
-        public void boundaryDisplay
+        public void boundaryDisplay(TreeNode root){
+            
+        }
 }
