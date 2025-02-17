@@ -2,7 +2,7 @@ package BINARY_TREE;
 
 public class verticalOrderTraversalOfBinaryTree {
                                 
-import java.util.*;
+
 
 // Node class for the binary tree
 class Node {
