@@ -16,7 +16,9 @@ class Node {
         right = null;
     }
 }
-class Pair
+class Pair{
+    int
+}
 
 
     // Function to perform vertical order traversal
