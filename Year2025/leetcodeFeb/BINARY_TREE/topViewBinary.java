@@ -5,9 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Queue;
-import java.util.TreeMap;
+import java.util. Map;
 
-public class topViewBinaryTree {
+public class topViewBinary  {
     class Pair<T, U> {
         T first;
         U second;
@@ -25,19 +25,19 @@ public class topViewBinaryTree {
             return second;
         }
     }
-    public class Tree TreeNode {
+    public class    Node {
             int val;
-            Tree TreeNode left;
-            Tree TreeNode right;
-            Tree TreeNode() {}
-            Tree TreeNode(int val) { this.val = val; }
-            Tree TreeNode(int val, Tree TreeNode left, Tree TreeNode right) {
+               Node left;
+               Node right;
+               Node() {}
+               Node(int val) { this.val = val; }
+               Node(int val,    Node left,    Node right) {
                 this.val = val;
                 this.left = left;
                 this.right = right;
             }
         }
-         public List<Integer> topView( TreeNode root) {
+         public List<Integer> topView(  Node root) {
         // List to store the result
         List<Integer> ans = new ArrayList<>();
         
@@ -48,12 +48,12 @@ public class topViewBinaryTree {
         
         // Map to store the top view nodes
         // based on their vertical positions
-        Map<Integer, Integer> mpp = new TreeMap<>();
+        Map<Integer, Integer> mpp = new  Map<>();
         
         // Queue for BFS traversal, each element
         // is a pair containing node 
         // and its vertical position
-        Queue<Pair< TreeNode, Integer>> q = new LinkedList<>();
+        Queue<Pair<  Node, Integer>> q = new LinkedList<>();
         
         // Push the root node with its vertical
         // position (0) into the queue
@@ -63,8 +63,8 @@ public class topViewBinaryTree {
         while (!q.isEmpty()) {
             // Retrieve the node and its vertical
             // position from the front of the queue
-            Pair< TreeNode, Integer> pair = q.poll();
-             TreeNode node = pair.getKey();
+            Pair<  Node, Integer> pair = q.poll();
+              Node node = pair.getKey();
             int line = pair.getValue();
             
             // If the vertical position is not already
