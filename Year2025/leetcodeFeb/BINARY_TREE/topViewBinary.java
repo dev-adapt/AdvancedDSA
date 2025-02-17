@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.TreeMap;
 
-public class topViewBinaryTree {
+public class topViewBinary {
     class Pair<T, U> {
         T first;
         U second;
@@ -25,13 +25,13 @@ public class topViewBinaryTree {
             return second;
         }
     }
-    public class Tree TreeNode {
+    public class  TreeNode {
             int val;
-            Tree TreeNode left;
-            Tree TreeNode right;
-            Tree TreeNode() {}
-            Tree TreeNode(int val) { this.val = val; }
-            Tree TreeNode(int val, Tree TreeNode left, Tree TreeNode right) {
+             TreeNode left;
+             TreeNode right;
+             TreeNode() {}
+             TreeNode(int val) { this.val = val; }
+             TreeNode(int val,  TreeNode left,  TreeNode right) {
                 this.val = val;
                 this.left = left;
                 this.right = right;
