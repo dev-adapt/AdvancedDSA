@@ -31,6 +31,6 @@ public class zigZagLevelOrderTraversal {
     }
     public void nthLevel(TreeNode root,int n,List<Integer>arr){
         if(root == null) return;
-        
+        if(n == 1){\ arr.add(root.val);}
     }
 }
