@@ -33,7 +33,7 @@ public class boundaryTraversal {
                 return;
             }
             bottomBoundary(root.left);
-            bo
+            bottomBoundary(root.right);
         }
         public void rightBoundary(TreeNode root){
             if(root==null)return;
