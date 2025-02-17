@@ -17,7 +17,7 @@ public class zigZagLevelOrderTraversal {
             }
         }
         
-   class Solution {
+  
     public void nthLevel(TreeNode root, int n, List<Integer> arr) {
         if (root == null) return;
         if (n == 1) {
@@ -96,4 +96,4 @@ public class zigZagLevelOrderTraversal {
     //      nthLevel(root.right, n-1, arr);
     //      nthLevel(root.left,n-1, arr);
     // }
-}
+
