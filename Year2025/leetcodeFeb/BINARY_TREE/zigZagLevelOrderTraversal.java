@@ -20,7 +20,7 @@ public class zigZagLevelOrderTraversal {
         for(int i=1;i<len;i++){
             if((i&1)==0)
 
-            
+            else 
         }
     }
     public int height(TreeNode root){
