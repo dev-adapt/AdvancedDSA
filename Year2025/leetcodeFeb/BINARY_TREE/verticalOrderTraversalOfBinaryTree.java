@@ -19,7 +19,7 @@ class Node {
     }
 }
 
-public class Solution {
+
     // Function to perform vertical order traversal
     // and return a 2D ArrayList of node values
     public List<List<Integer>> findVertical(Node root) {
