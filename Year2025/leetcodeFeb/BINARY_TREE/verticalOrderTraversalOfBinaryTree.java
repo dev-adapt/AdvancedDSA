@@ -21,7 +21,8 @@ class Pair{
     int col;
 
     public Pair(int row,int col){
-        row=this
+        row=this.row;
+        col=this.col;
     }
 }
 
