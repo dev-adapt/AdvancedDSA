@@ -57,8 +57,7 @@ public class topViewBinary {
              TreeNode node = pair.getKey();
             int line = pair.getValue();
             
-            // If the vertical position is not already
-            // in the map, add the node's  val to the map
+            // If the vertical position is not already in the map, add the node's  val to the map
             if (!mpp.containsKey(line)) {
                 mpp.put(line, node. val);
             }
