@@ -27,6 +27,7 @@ public class zigZagLevelOrderTraversal {
 
             ans.add(arr);
         }
+        return ans;
     }
     public int height(TreeNode root){
         if(root == null) return 0;
