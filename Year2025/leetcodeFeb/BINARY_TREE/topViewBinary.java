@@ -50,8 +50,7 @@ public class topViewBinary {
         Queue<Pair< TreeNode, Integer>> q = new LinkedList<>();
      
         q.add(new Pair<>(root, 0));
-        
-        // BFS traversal
+     
         while (!q.isEmpty()) {
             // Retrieve the node and its vertical
             // position from the front of the queue
