@@ -32,6 +32,7 @@ public class boundaryTraversal {
                 System.out.println(root.val);
                 return;
             }
+            bottomBoundary(root.left);
             
         }
         public void rightBoundary(TreeNode root){
