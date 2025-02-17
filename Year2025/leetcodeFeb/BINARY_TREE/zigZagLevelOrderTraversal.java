@@ -20,6 +20,7 @@ public class zigZagLevelOrderTraversal {
         int len=height(root)+1;
         List<List<Integer>>ans=new ArrayList<List<Integer>>();
         for(int i=1;i<len;i++){
+            List<>
             if((i&1)==0)
 
             else 
