@@ -72,9 +72,6 @@ public class topViewBinary {
                  q.add(new Pair<>(node.right, line + 1));
             }
         }
-        
-        // Transfer values from the
-        // map to the result list
         for (int value : mpp.values()) {
             ans.add(value);
         }
