@@ -83,7 +83,7 @@ public class verticalOrderTraversalOfBinaryTree {
             }
             ans.add(col);
         }
-        return ans
+        return ans;
     }
 
     // Helper function to print the result
