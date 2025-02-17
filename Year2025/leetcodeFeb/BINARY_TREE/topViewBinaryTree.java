@@ -8,19 +8,19 @@ import java.util.Queue;
 import java.util.TreeMap;
 
 public class topViewBinaryTree {
-    public class TreeNode {
+    public class Tree TreeNode {
             int val;
-            TreeNode left;
-            TreeNode right;
-            TreeNode() {}
-            TreeNode(int val) { this.val = val; }
-            TreeNode(int val, TreeNode left, TreeNode right) {
+            Tree TreeNode left;
+            Tree TreeNode right;
+            Tree TreeNode() {}
+            Tree TreeNode(int val) { this.val = val; }
+            Tree TreeNode(int val, Tree TreeNode left, Tree TreeNode right) {
                 this.val = val;
                 this.left = left;
                 this.right = right;
             }
         }
-         public List<Integer> topView(Node root) {
+         public List<Integer> topView( TreeNode root) {
         // List to store the result
         List<Integer> ans = new ArrayList<>();
         
@@ -36,7 +36,7 @@ public class topViewBinaryTree {
         // Queue for BFS traversal, each element
         // is a pair containing node 
         // and its vertical position
-        Queue<Pair<Node, Integer>> q = new LinkedList<>();
+        Queue<Pair< TreeNode, Integer>> q = new LinkedList<>();
         
         // Push the root node with its vertical
         // position (0) into the queue
@@ -46,8 +46,8 @@ public class topViewBinaryTree {
         while (!q.isEmpty()) {
             // Retrieve the node and its vertical
             // position from the front of the queue
-            Pair<Node, Integer> pair = q.poll();
-            Node node = pair.getKey();
+            Pair< TreeNode, Integer> pair = q.poll();
+             TreeNode node = pair.getKey();
             int line = pair.getValue();
             
             // If the vertical position is not already
