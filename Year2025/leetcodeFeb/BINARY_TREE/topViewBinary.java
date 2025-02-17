@@ -48,9 +48,7 @@ public class topViewBinary {
         
         // Queue for BFS traversal, each element is a pair containing node  and its vertical position
         Queue<Pair< TreeNode, Integer>> q = new LinkedList<>();
-        
-        // Push the root node with its vertical
-        // position (0) into the queue
+     
         q.add(new Pair<>(root, 0));
         
         // BFS traversal
