@@ -20,7 +20,7 @@ class Pair{
     int row;
     int col;
 
-    public Pair
+    public Pair(int)
 }
 
 
