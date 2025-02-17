@@ -68,9 +68,9 @@ public class topViewBinary {
             int line = pair.getValue();
             
             // If the vertical position is not already
-            // in the map, add the node's data to the map
+            // in the map, add the node's  val to the map
             if (!mpp.containsKey(line)) {
-                mpp.put(line, node.data);
+                mpp.put(line, node. val);
             }
             
             // Process left child
