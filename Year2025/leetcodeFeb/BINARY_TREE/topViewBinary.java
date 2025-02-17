@@ -52,8 +52,7 @@ public class topViewBinary {
         q.add(new Pair<>(root, 0));
      
         while (!q.isEmpty()) {
-            // Retrieve the node and its vertical
-            // position from the front of the queue
+           
             Pair< TreeNode, Integer> pair = q.poll();
              TreeNode node = pair.getKey();
             int line = pair.getValue();
