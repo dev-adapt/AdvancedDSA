@@ -89,7 +89,7 @@ public class zigZagLevelOrderTraversal {
           return;
          }
         
-         nthLevel(root.right, n, arr);
+         nthLevel(root.right, n-1, arr);
          nthLevel(root.left,n-1, arr);
     }
 }
