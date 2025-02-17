@@ -17,6 +17,12 @@ public class boundaryTraversal {
 
         }
         public void leftBoundary(TreeNode root){
+
+        }
+        public void leftBoundary(TreeNode root){
+            
+        }
+        public void leftBoundary(TreeNode root){
             
         }
 }
