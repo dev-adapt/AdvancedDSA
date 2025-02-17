@@ -41,7 +41,7 @@ public class topViewBinary {
        
         List<Integer> ans = new ArrayList<>();
         
-        // Check if the tree is empty
+      
         if (root == null) {
             return ans;
         }
