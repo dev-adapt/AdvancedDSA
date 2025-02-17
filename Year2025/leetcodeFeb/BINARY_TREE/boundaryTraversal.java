@@ -28,7 +28,10 @@ public class boundaryTraversal {
         }
         public void bottomBoundary(TreeNode root){
             if(root==null)return;
-            if(root.left==null && root.right==null);
+            if(root.left==null && root.right==null){
+                System.out.println(root.val);
+                return
+            }
         }
         public void rightBoundary(TreeNode root){
             if(root==null)return;
