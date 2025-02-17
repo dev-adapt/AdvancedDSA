@@ -3,14 +3,14 @@ import java.util.*;
 
 public class verticalOrderTraversalOfBinaryTree {
 
-    // Node class for the binary tree
-    static class Node {
+    //  TreeNode class for the binary tree
+    static class  TreeNode {
         int data;
-        Node left;
-        Node right;
+         TreeNode left;
+         TreeNode right;
 
         // Constructor to initialize the node with a value
-        public Node(int val) {
+        public  TreeNode(int val) {
             data = val;
             left = null;
             right = null;
@@ -37,12 +37,12 @@ public class verticalOrderTraversalOfBinaryTree {
     }
 
     // Function to perform vertical order traversal
-    public List<List<Integer>> findVertical(Node root) {
+    public List<List<Integer>> findVertical( TreeNode root) {
         // Map to store nodes based on vertical and level information
         Map<Integer, Map<Integer, TreeSet<Integer>>> nodes = new TreeMap<>();
 
         // Queue for BFS traversal, each element is a pair containing node and its vertical and level information
-        Queue<Pair<Node, Pair<Integer, Integer>>> todo = new LinkedList<>();
+        Queue<Pair< TreeNode, Pair<Integer, Integer>>> todo = new LinkedList<>();
 
         // Push the root node with initial vertical and level values (0, 0)
         todo.add(new Pair<>(root, new Pair<>(0, 0)));
@@ -50,8 +50,8 @@ public class verticalOrderTraversalOfBinaryTree {
         // BFS traversal
         while (!todo.isEmpty()) {
             // Retrieve the node and its vertical and level information from the front of the queue
-            Pair<Node, Pair<Integer, Integer>> p = todo.poll();
-            Node temp = p.getKey();
+            Pair< TreeNode, Pair<Integer, Integer>> p = todo.poll();
+             TreeNode temp = p.getKey();
 
             // Extract the vertical and level information
             int x = p.getValue().getKey(); // Vertical
