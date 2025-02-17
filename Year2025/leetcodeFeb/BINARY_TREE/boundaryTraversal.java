@@ -17,7 +17,7 @@ public class boundaryTraversal {
             if(root==null )return;
             leftBoundary(root);
             bottomBoundary(root);
-            rig
+            rightBoundary(root);
         }
         public void leftBoundary(TreeNode root){
 
