@@ -80,7 +80,7 @@ public class zigZagLevelOrderTraversal {
           return;
          }
          nthLevel(root.left,n-1, arr);
-         nthLevel(root.right, n, arr);
+         nthLevel(root.right, n-1, arr);
     }
     public void nthLevel2(TreeNode root,int n,List<Integer>arr){
         if(root == null) return;
