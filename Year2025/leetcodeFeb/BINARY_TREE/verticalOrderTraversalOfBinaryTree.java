@@ -19,6 +19,8 @@ class Node {
 class Pair{
     int row;
     int col;
+
+    public Pair
 }
 
 
