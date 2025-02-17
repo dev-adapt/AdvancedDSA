@@ -41,11 +41,9 @@ public class topViewBinary {
        
         List<Integer> ans = new ArrayList<>();
         
-      
-        if (root == null) {
+        if (root == null) 
             return ans;
-        }
-        
+      
         // Map to store the top view nodes
         // based on their vertical positions
         Map<Integer, Integer> mpp = new TreeMap<>();
