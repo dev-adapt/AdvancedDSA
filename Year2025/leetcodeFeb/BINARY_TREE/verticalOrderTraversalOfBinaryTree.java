@@ -1,8 +1,6 @@
 package BINARY_TREE;
 import java.util.*;
 public class verticalOrderTraversalOfBinaryTree {
-                                
-
 
 // Node class for the binary tree
 class Node {
