@@ -22,7 +22,7 @@ public class boundaryTraversal {
         public void bottomBoundary(TreeNode root){
             
         }
-        public void leftBoundary(TreeNode root){
+        public void rightBoundary(TreeNode root){
             
         }
 }
