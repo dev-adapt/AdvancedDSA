@@ -5,7 +5,7 @@ public class verticalOrderTraversalOfBinaryTree {
 
     //  TreeNode class for the binary tree
     static class  TreeNode {
-        int data;
+        int val;
          TreeNode left;
          TreeNode right;
 
