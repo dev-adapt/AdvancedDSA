@@ -17,6 +17,7 @@ public class zigZagLevelOrderTraversal {
         }
      public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         int len=height(root)+1;
+        
         for(int i=1;i<len;i++){
             if((i&1)==0)
 
@@ -28,6 +29,6 @@ public class zigZagLevelOrderTraversal {
         return 1 + Math.max(height(root.left), height(root.right));
     }
     public void nthLevel(TreeNode root,int n,List<Integer>arr){
-        
+
     }
 }
