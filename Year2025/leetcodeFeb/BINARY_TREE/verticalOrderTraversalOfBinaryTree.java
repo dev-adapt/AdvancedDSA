@@ -1,65 +1,63 @@
 package BINARY_TREE;
 import java.util.*;
+
 public class verticalOrderTraversalOfBinaryTree {
 
-// Node class for the binary tree
-class Node {
-    int data;
-    Node left;
-    Node right;
+    // Node class for the binary tree
+    static class Node {
+        int data;
+        Node left;
+        Node right;
 
-    // Constructor to initialize
-    // the node with a value
-    public Node(int val) {
-        data = val;
-        left = null;
-        right = null;
+        // Constructor to initialize the node with a value
+        public Node(int val) {
+            data = val;
+            left = null;
+            right = null;
+        }
     }
-}
-// class Pair{
-//     int row;
-//     int col;
 
-//     public Pair(int row,int col){
-//         row=this.row;
-//         col=this.col;
-//     }
-// }
+    // Pair class to store two values
+    class Pair<T, U> {
+        T first;
+        U second;
 
+        public Pair(T first, U second) {
+            this.first = first;
+            this.second = second;
+        }
+
+        public T getKey() {
+            return first;
+        }
+
+        public U getValue() {
+            return second;
+        }
+    }
 
     // Function to perform vertical order traversal
-    // and return a 2D ArrayList of node values
     public List<List<Integer>> findVertical(Node root) {
-        // Map to store nodes based on
-        // vertical and level information
+        // Map to store nodes based on vertical and level information
         Map<Integer, Map<Integer, TreeSet<Integer>>> nodes = new TreeMap<>();
 
-        // Queue for BFS traversal, each
-        // element is a pair containing node
-        // and its vertical and level information
+        // Queue for BFS traversal, each element is a pair containing node and its vertical and level information
         Queue<Pair<Node, Pair<Integer, Integer>>> todo = new LinkedList<>();
 
-        // Push the root node with initial vertical
-        // and level values (0, 0)
+        // Push the root node with initial vertical and level values (0, 0)
         todo.add(new Pair<>(root, new Pair<>(0, 0)));
 
         // BFS traversal
         while (!todo.isEmpty()) {
-            // Retrieve the node and its vertical
-            // and level information from
-            // the front of the queue
+            // Retrieve the node and its vertical and level information from the front of the queue
             Pair<Node, Pair<Integer, Integer>> p = todo.poll();
             Node temp = p.getKey();
 
             // Extract the vertical and level information
-            // x -> vertical
-            int x = p.getValue().getKey();
-            // y -> level
-            int y = p.getValue().getValue();
+            int x = p.getValue().getKey(); // Vertical
+            int y = p.getValue().getValue(); // Level
 
-            // Insert the node value into the
-            // corresponding vertical and level
-            // in the map
+            // Insert the node value into the corresponding vertical and level in the map
             nodes.computeIfAbsent(x, k -> new TreeMap<>())
                  .computeIfAbsent(y, k -> new TreeSet<>())
                  .add(temp.data);
@@ -75,25 +73,19 @@ class Node {
             }
         }
 
-        // Prepare the final result list
-        // by combining values from the map
+        // Prepare the final result list by combining values from the map
         List<List<Integer>> ans = new ArrayList<>();
         for (Map.Entry<Integer, Map<Integer, TreeSet<Integer>>> entry : nodes.entrySet()) {
             List<Integer> col = new ArrayList<>();
             for (TreeSet<Integer> set : entry.getValue().values()) {
-                // Insert node values
-                // into the column list
                 col.addAll(set);
             }
-            // Add the column list
-            // to the final result
             ans.add(col);
         }
         return ans;
     }
 
-    // Helper function to
-    // print the result
+    // Helper function to print the result
     private static void printResult(List<List<Integer>> result) {
         for (List<Integer> level : result) {
             for (int node : level) {
@@ -101,22 +93,21 @@ class Node {
             }
             System.out.println();
         }
-        System.out.println();
     }
 
     public static void main(String[] args) {
-        // Creating a sample binary tree
-        Node root = new Node(1);
-        root.left = new Node(2);
-        root.left.left = new Node(4);
-        root.left.right = new Node(10);
-        root.left.left.right = new Node(5);
-        root.left.left.right.right = new Node(6);
-        root.right = new Node(3);
-        root.right.right = new Node(10);
-        root.right.left = new Node(9);
+        verticalOrderTraversalOfBinaryTree solution = new verticalOrderTraversalOfBinaryTree();
 
-        Solution solution = new Solution();
+        // Creating a sample binary tree
+        Node root = solution.new Node(1);
+        root.left = solution.new Node(2);
+        root.left.left = solution.new Node(4);
+        root.left.right = solution.new Node(10);
+        root.left.left.right = solution.new Node(5);
+        root.left.left.right.right = solution.new Node(6);
+        root.right = solution.new Node(3);
+        root.right.right = solution.new Node(10);
+        root.right.left = solution.new Node(9);
 
         // Get the Vertical traversal
         List<List<Integer>> verticalTraversal = solution.findVertical(root);
@@ -126,6 +117,7 @@ class Node {
         printResult(verticalTraversal);
     }
 }
+
                             
                         
 
