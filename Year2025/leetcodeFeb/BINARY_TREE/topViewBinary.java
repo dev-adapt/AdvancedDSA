@@ -44,7 +44,7 @@ public class topViewBinary {
         if (root == null) 
             return ans;
       
-        Map<Integer, Integer> mpp = new TreeMap<>();         // Map to store the top view nodes based on their vertical positions
+        Map<Integer, Integer> mpp = new TreeMap<>();     // Map to store the top view nodes based on their vertical positions
         
         // Queue for BFS traversal, each element is a pair containing node  and its vertical position
         Queue<Pair< TreeNode, Integer>> q = new LinkedList<>();
