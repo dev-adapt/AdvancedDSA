@@ -19,9 +19,7 @@ public class RightSideView {
     public List<Integer> rightsideView( TreeNode root) {
        
         List<Integer> res = new ArrayList<>();
-
         recursionRight(root, 0, res);
-
         return res;
     }
 
