@@ -40,7 +40,7 @@ public class RightSideView {
         if (res.size() == level) {
             // If equal, add the value of the
             // current node to the result list
-            res.add(root.data);
+            res.add(root.val);
         }
 
         // Recursively call the function for the
