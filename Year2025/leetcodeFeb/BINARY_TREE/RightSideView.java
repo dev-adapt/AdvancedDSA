@@ -27,9 +27,7 @@ public class RightSideView {
     
         if (root == null) 
             return;
-        
-
-        // Check if the size of the result list is equal to the current level
+      
         if (res.size() == level)  res.add(root.val);
 
             recursionRight(root.right, level + 1, res);
