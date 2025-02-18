@@ -28,7 +28,8 @@ public class maxWidthOfBinaryTree {public class TreeNode {
         Queue<Pair>q=new LinkedList<>();
         q.add(new Pair(root,0));
         int mmin=0;
-        int first=
+        int first=0,last=0;
+        
         return ans;
     }
 }
