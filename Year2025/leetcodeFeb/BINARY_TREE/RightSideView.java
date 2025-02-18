@@ -34,8 +34,6 @@ public class RightSideView {
 
             recursionRight(root.right, level + 1, res);
 
-            // Recursively call the function for the
-            // left child with an increased level
             recursionRight(root.left, level + 1, res);
         
     }
