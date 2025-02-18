@@ -31,7 +31,7 @@ public class maxWidthOfBinaryTree {
        
         while(!q.isEmpty()){
             
-            int mmin=q.peek.n;
+            int mmin=q.peek();
             int size=q.size();
             int first=0,last=0;
             for(int i=0;i<size;i++){
