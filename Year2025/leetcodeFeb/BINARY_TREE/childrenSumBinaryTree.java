@@ -13,7 +13,7 @@ public class childrenSumBinaryTree {
                 this.right = right;
             }
         }
-        public static int isSumProperty(Node root)
+        public static int isSumProperty( TreeNoderoot)
         {
             // add your code here
             if(root==null)return 1;
