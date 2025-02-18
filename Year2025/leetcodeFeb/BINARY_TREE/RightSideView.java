@@ -23,8 +23,7 @@ public class RightSideView {
         return res;
     }
 
-    private void recursionRight( TreeNode root, int level, List<Integer> res) {
-        // Check if the current node is null
+    private void recursionRight( TreeNode roo  // Check if the current node is null
         if (root == null) {
             return;
         }
