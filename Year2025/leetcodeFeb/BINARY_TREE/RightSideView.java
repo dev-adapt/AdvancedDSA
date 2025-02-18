@@ -31,8 +31,7 @@ public class RightSideView {
 
         // Check if the size of the result list is equal to the current level
         if (res.size() == level) {
-            // If equal, add the value of the
-            // current node to the result list
+         
             res.add(root.val);
 
             // Recursively call the function for the
