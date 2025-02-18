@@ -16,6 +16,6 @@ public class maxWidthOfBinaryTree {public class TreeNode {
         TreeNode node;
         int num;
 
-        Pair(TreeNode noe)
+        Pair(TreeNode node, int num)
     }
 }
