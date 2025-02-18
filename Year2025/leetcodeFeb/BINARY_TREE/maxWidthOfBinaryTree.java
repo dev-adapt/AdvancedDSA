@@ -42,7 +42,7 @@ public class maxWidthOfBinaryTree {
                 if(i==0)first=curr_id;
                 if(i==size-1)last=curr_id;
 
-                if(node.left!=null)q.offer(new PAir)
+                if(node.left!=null)q.offer(new Pair(root.left,))
             }
         }
         return ans;
