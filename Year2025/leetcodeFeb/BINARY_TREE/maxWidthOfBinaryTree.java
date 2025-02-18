@@ -23,7 +23,7 @@ public class maxWidthOfBinaryTree {public class TreeNode {
     }
     public int widthOfBinaryTree(TreeNode root) {
         int ans=0;
-        Queue<>
+        Queue<Pair>
         return ans;
     }
 }
