@@ -19,10 +19,10 @@ public class childrenSumBinaryTree {
             if(root==null)return 1;
             if(root.left==null && root.right==null)return 1;
             
-            int leftData = (root.left != null) ? root.left.data : 0;
-            int rightData = (root.right != null) ? root.right.data : 0;
+            int leftData = (root.left != null) ? root.left.val : 0;
+            int rightData = (root.right != null) ? root.right.val : 0;
             
-            if(root.data == (leftData + rightData)) {
+            if(root.val == (leftData + rightData)) {
                 int left = isSumProperty(root.left);
                 int right = isSumProperty(root.right);
                 
