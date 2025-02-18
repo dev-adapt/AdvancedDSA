@@ -8,7 +8,7 @@ Write-Host "Watching for changes..."
 $action = {
     Start-Sleep -Seconds 2  # Avoid multiple rapid commits
     git add .
-    git commit -m "Auto-update: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+    git commit -m "A $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
     git push origin main
     Write-Host "Changes pushed to GitHub!"
 }
