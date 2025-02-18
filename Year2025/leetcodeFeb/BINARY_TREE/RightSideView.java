@@ -20,8 +20,6 @@ public class RightSideView {
        
         List<Integer> res = new ArrayList<>();
 
-        // Call the recursive function
-        // to populate the right-side view
         recursionRight(root, 0, res);
 
         return res;
