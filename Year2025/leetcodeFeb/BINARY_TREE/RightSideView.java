@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RightSideView {
-    public List<Integer> rightsideView(Node root) {
+    public List<Integer> rightsideView( TreeNode root) {
         // List to store the result
         List<Integer> res = new ArrayList<>();
 
@@ -16,7 +16,7 @@ public class RightSideView {
     }
 
     // Function to return the Left view of the binary tree
-    public List<Integer> leftsideView(Node root) {
+    public List<Integer> leftsideView( TreeNode root) {
         // List to store the result
         List<Integer> res = new ArrayList<>();
 
@@ -29,7 +29,7 @@ public class RightSideView {
 
     // Recursive function to traverse the
     // binary tree and populate the left-side view
-    private void recursionLeft(Node root, int level, List<Integer> res) {
+    private void recursionLeft( TreeNode root, int level, List<Integer> res) {
         // Check if the current node is null
         if (root == null) {
             return;
@@ -54,7 +54,7 @@ public class RightSideView {
 
     // Recursive function to traverse the
     // binary tree and populate the right-side view
-    private void recursionRight(Node root, int level, List<Integer> res) {
+    private void recursionRight( TreeNode root, int level, List<Integer> res) {
         // Check if the current node is null
         if (root == null) {
             return;
