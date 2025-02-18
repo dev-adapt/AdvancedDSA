@@ -30,7 +30,11 @@ public class maxWidthOfBinaryTree {
         q.add(new Pair(root,0));
        
         while(!q.isEmpty()){
-        
+            
+            int mmin=0;
+            int size=q.size();
+            int first=0,last=0;
+            
         }
         return ans;
     }
