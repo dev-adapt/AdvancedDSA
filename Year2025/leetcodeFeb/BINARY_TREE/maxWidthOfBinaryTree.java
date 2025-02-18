@@ -1,5 +1,7 @@
 package BINARY_TREE;
 
+import java.util.LinkedList;
+
 public class maxWidthOfBinaryTree {public class TreeNode {
         int val;
         TreeNode left;
@@ -23,7 +25,7 @@ public class maxWidthOfBinaryTree {public class TreeNode {
     }
     public int widthOfBinaryTree(TreeNode root) {
         int ans=0;
-        Queue<Pair>q=new L
+        Queue<Pair>q=new LinkedList<>();
         return ans;
     }
 }
