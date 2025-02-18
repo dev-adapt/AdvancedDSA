@@ -4,6 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RightSideView {
+    public class TreeNode {
+            int val;
+            TreeNode left;
+            TreeNode right;
+            TreeNode() {}
+            TreeNode(int val) { this.val = val; }
+            TreeNode(int val, TreeNode left, TreeNode right) {
+                this.val = val;
+                this.left = left;
+                this.right = right;
+            }
+        }
     public List<Integer> rightsideView( TreeNode root) {
         // List to store the result
         List<Integer> res = new ArrayList<>();
