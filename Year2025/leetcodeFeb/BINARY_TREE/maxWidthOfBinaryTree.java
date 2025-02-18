@@ -41,7 +41,7 @@ public class maxWidthOfBinaryTree {
 
                 if(i==0)first=curr_id;
                 if(i==size-1)last=curr_id;
-
+                
             }
         }
         return ans;
