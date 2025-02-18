@@ -32,8 +32,6 @@ public class RightSideView {
         // Check if the size of the result list is equal to the current level
         if (res.size() == level)  res.add(root.val);
 
-            // Recursively call the function for the
-            // right child with an increased level
             recursionRight(root.right, level + 1, res);
 
             // Recursively call the function for the
