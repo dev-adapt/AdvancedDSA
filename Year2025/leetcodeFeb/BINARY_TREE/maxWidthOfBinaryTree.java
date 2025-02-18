@@ -30,7 +30,7 @@ public class maxWidthOfBinaryTree {public class TreeNode {
         int mmin=0;
         int first=0,last=0;
         while(!q.isEmpty()){
-            int 
+            
         }
         return ans;
     }
