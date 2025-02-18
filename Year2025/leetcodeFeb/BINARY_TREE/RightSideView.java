@@ -17,7 +17,7 @@ public class RightSideView {
             }
         }
     public List<Integer> rightsideView( TreeNode root) {
-        // List to store the result
+       
         List<Integer> res = new ArrayList<>();
 
         // Call the recursive function
