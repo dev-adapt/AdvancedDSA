@@ -1,6 +1,6 @@
 package BINARY_TREE;
 
-import java.util.;
+import java.util.*;
 
 public class maxWidthOfBinaryTree {public class TreeNode {
         int val;
