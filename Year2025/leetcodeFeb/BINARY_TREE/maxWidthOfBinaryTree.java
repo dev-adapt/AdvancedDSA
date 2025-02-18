@@ -36,7 +36,10 @@ public class maxWidthOfBinaryTree {
             int first=0,last=0;
             for(int i=0;i<size;i++){
                 int curr_id=q.peek().num-mmin;
-                TreeNode node=q.peek().node
+                TreeNode node=q.peek().node;
+                q.poll();
+
+                if
 
             }
         }
