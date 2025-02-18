@@ -29,8 +29,7 @@ public class RightSideView {
             return;
         
 
-        // Check if the size of the result list
-        // is equal to the current level
+        // Check if the size of the result list is equal to the current level
         if (res.size() == level) {
             // If equal, add the value of the
             // current node to the result list
