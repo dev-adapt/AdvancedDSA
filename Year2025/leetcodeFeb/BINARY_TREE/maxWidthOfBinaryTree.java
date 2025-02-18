@@ -62,7 +62,7 @@ public class maxWidthOfBinaryTree {
             for (int i = 0; i < size; i++) {
                 Pair temp = q.poll();
                 TreeNode node = temp.node;
-                long curr_id = temp.num - mmin;  // Normalize index
+                int curr_id = temp.num - mmin;  // Normalize index
 
                 if (i == 0) first = curr_id;
                 if (i == size - 1) last = curr_id;
