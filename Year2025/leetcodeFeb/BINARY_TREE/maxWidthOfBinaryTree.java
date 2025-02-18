@@ -39,7 +39,7 @@ public class maxWidthOfBinaryTree {
                 TreeNode node=q.peek().node;
                 q.poll();
 
-                if
+                if(i==0)
 
             }
         }
