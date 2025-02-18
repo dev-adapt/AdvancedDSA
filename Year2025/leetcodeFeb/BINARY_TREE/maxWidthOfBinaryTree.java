@@ -40,7 +40,7 @@ public class maxWidthOfBinaryTree {
                 q.poll();
 
                 if(i==0)first=curr_id;
-                if(i)
+                if(i==size-1)
 
             }
         }
