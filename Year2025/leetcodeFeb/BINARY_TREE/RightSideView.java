@@ -25,9 +25,9 @@ public class RightSideView {
 
     private void recursionRight( TreeNode root, int level, List<Integer> res) {
     
-        if (root == null) {
+        if (root == null) 
             return;
-        }
+        
 
         // Check if the size of the result list
         // is equal to the current level
