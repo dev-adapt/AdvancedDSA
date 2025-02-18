@@ -32,7 +32,7 @@ public class maxWidthOfBinaryTree {
         int size=q.size();
         int first=0,last=0;
         while(!q.isEmpty()){
-            int curr_id=
+            
         }
         return ans;
     }
