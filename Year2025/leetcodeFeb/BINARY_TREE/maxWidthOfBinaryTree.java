@@ -34,7 +34,9 @@ public class maxWidthOfBinaryTree {
             int mmin=0;
             int size=q.size();
             int first=0,last=0;
-            
+            for(int i=0;i<size;i++){
+                
+            }
         }
         return ans;
     }
