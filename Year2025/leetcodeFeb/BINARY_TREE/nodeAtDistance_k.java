@@ -2,7 +2,7 @@ package BINARY_TREE;
 
 import java.util.*;
 
-public class nodeAtDistancek {
+public class nodeAtDistance_k {
     public class TreeNode {
         int val;
         TreeNode left;
@@ -58,9 +58,11 @@ public class nodeAtDistancek {
             TreeNode curr=q.poll();
         if(curr.left!=null){
             parent_track.put(curr.left,curr);
+            q.offer(curr.left);
         }
         if(curr.right!=null){
             parent_track.put(curr.right,curr);
+            q.offer(curr.right);
         }
       }
       return;
