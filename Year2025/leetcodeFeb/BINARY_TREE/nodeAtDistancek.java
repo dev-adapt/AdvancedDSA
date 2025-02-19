@@ -19,5 +19,7 @@ public class nodeAtDistancek {
         Map<TreeNode,TreeNode>parent_track=new HashMap<>();
 
     }
-    private void getParent(TreeNode root)
+    private void getParent(TreeNode root){
+        
+    }
 }
