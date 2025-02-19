@@ -24,6 +24,7 @@ public class nodeAtDistancek {
         Queue<TreeNode>q=new LinkedList<>();
         q.add(root);
         while(!q.isEmpty()){
+            TreeNode node=q.poll();
         if(root.left!=null){
             parent_track.put(root.left,root);
         }
