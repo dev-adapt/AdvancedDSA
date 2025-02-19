@@ -25,7 +25,8 @@ public class nodeAtDistancek {
         int curr_level=0;
         while(!q.isEmpty()){
             int size=q.size();
-            if(curr_level==k)
+            if(curr_level==k)break;
+            
         }
 
     }
