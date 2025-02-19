@@ -24,6 +24,8 @@ public class nodeAtDistancek {
         if(root.left!=null){
             parent_track.put(root.left,root);
         }
-        if(root.right!=null)parent_track.put(root.right,root);
+        if(root.right!=null){
+            parent_track.put(root.right,root);
+        }
     }
 }
