@@ -23,7 +23,7 @@ public class nodeAtDistancek {
         Map<TreeNode,Boolean>visited=new HashMap<>();
         visited.put(target,true);
         int curr_level=0;
-        
+        while(!)
 
     }
     private void getParent(TreeNode root, Map<TreeNode,TreeNode>parent_track){
