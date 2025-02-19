@@ -17,4 +17,4 @@ Register-ObjectEvent $watcher "Changed" -Action $action
 Register-ObjectEvent $watcher "Created" -Action $action
 Register-ObjectEvent $watcher "Deleted" -Action $action
 
-while ($true) { Start-Sleep -Seconds 4000 }  # Keep script running
+while ($true) { Start-Sleep -Seconds 4 }  # Keep script running
