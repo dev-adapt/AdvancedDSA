@@ -22,7 +22,8 @@ public class nodeAtDistancek {
     private void getParent(TreeNode root, Map<TreeNode,TreeNode>parent_track){
         if(root==null) return;
         Queue<TreeNode>q=new LinkedList<>();
-        
+        q.add(root);
+        while
         if(root.left!=null){
             parent_track.put(root.left,root);
         }
