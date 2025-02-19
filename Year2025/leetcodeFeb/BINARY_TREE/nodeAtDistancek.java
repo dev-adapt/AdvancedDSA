@@ -21,6 +21,8 @@ public class nodeAtDistancek {
     }
     private void getParent(TreeNode root, Map<TreeNode,TreeNode>parent_track){
         if(root==null) return;
-        if(root.left!=null)
+        if(root.left!=null){
+            
+        }
     }
 }
