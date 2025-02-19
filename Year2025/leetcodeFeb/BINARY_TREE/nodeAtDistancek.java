@@ -20,6 +20,7 @@ public class nodeAtDistancek {
 
     }
     private void getParent(TreeNode root){
+        if(root==null) return;
         
     }
 }
