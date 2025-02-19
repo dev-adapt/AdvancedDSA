@@ -31,7 +31,7 @@ public class nodeAtDistancek {
                 TreeNode curr=q.poll();
                 if(curr.left!=null && visited.get(curr.left)==null){
                     q.offer(curr.left);
-                    visited.put(curr.left,)
+                    visited.put(curr.left,true);
                 }
             }
         }
