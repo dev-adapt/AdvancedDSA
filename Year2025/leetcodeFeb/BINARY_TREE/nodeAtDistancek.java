@@ -18,6 +18,8 @@ public class nodeAtDistancek {
        public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
         Map<TreeNode,TreeNode>parent_track=new HashMap<>();
         getParent(root, parent_track);
+        Queue<TreeNode>q=new LinkedList<>();
+        q.add(target);
         
 
     }
