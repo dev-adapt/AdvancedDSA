@@ -26,5 +26,6 @@
     "accessibility.signals.lineHasWarning": {
         "sound": "off",
         "announcement": "off"
-    }
+    },
+    "git.autofetchPeriod": 1
 }
