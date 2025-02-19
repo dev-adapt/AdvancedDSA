@@ -24,7 +24,8 @@ public class nodeAtDistancek {
         visited.put(target,true);
         int curr_level=0;
         while(!q.isEmpty()){
-            
+            int size=q.size();
+            if(curr_level==k)
         }
 
     }
