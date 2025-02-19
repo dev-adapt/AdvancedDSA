@@ -38,7 +38,7 @@ public class nodeAtDistancek {
                     visited.put(curr.right,true);
                 }
                 if(parent_track.get(curr)!=null && visited.get(parent_track.get(curr))==null){
-                    
+                    q.offer()
                 }
             }
         }
