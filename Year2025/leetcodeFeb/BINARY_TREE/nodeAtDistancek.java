@@ -26,7 +26,7 @@ public class nodeAtDistancek {
         while(!q.isEmpty()){
             TreeNode curr=q.poll();
         if(curr.left!=null){
-            parent_track.put(curr.left,root);
+            parent_track.put(curr.left,curr);
         }
         if(root.right!=null){
             parent_track.put(root.right,root);
