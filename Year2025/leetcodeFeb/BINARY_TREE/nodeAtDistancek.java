@@ -1,5 +1,6 @@
 package BINARY_TREE;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class nodeAtDistancek {
@@ -16,6 +17,6 @@ public class nodeAtDistancek {
         }
     }
        public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
-        Map<TreeNode,TreeNode>parent_track
+        Map<TreeNode,TreeNode>parent_track=new HashMap<>()
     }
 }
