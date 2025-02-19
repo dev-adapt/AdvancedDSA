@@ -65,7 +65,5 @@ public class nodeAtDistancek {
       }
       return;
     }
-    public static void main(String[] args) {
-        
-    }
+
 }
