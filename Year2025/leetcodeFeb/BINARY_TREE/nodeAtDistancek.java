@@ -1,6 +1,6 @@
 package BINARY_TREE;
 
-import java.util.HashMap;
+import java.util.*;
 
 public class nodeAtDistancek {
     public class TreeNode {
