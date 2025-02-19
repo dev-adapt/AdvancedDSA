@@ -43,7 +43,7 @@ public class nodeAtDistancek {
                 }
             }
         }
-        List<Integer> ans=new List<Integer>() {
+        List<Integer> ans=new ArrayList<Integer>();
         
         
     }
