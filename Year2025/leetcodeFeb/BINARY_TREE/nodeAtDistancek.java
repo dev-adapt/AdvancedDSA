@@ -23,7 +23,7 @@ public class nodeAtDistancek {
         if(root==null) return;
         Queue<TreeNode>q=new LinkedList<>();
         q.add(root);
-        while
+        while(!q.isEmpty()){
         if(root.left!=null){
             parent_track.put(root.left,root);
         }
