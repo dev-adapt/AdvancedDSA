@@ -28,7 +28,7 @@ public class nodeAtDistancek {
             if(curr_level==k)break;
             curr_level++;
             for(int i=0;i<size;i++){
-                
+                TreeNode curr=q.poll();
             }
         }
 
