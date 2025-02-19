@@ -20,7 +20,7 @@ public class nodeAtDistancek {
         getParent(root, parent_track);
         Queue<TreeNode>q=new LinkedList<>();
         q.add(target);
-        Map
+        Map<Tree>
 
     }
     private void getParent(TreeNode root, Map<TreeNode,TreeNode>parent_track){
