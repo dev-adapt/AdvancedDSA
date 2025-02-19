@@ -33,7 +33,7 @@ public class nodeAtDistancek {
                     q.offer(curr.left);
                     visited.put(curr.left,true);
                 }
-                if(curr.right!=null && visited.get(curr.left)==null){
+                if(curr.right!=null && visited.get(curr.right)==null){
                     q.offer(curr.left);
                     visited.put(curr.left,true);
                 }
