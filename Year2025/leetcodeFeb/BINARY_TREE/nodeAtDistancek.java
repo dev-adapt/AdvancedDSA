@@ -21,7 +21,7 @@ public class nodeAtDistancek {
         Queue<TreeNode>q=new LinkedList<>();
         q.add(target);
         Map<TreeNode,Boolean>visited=new HashMap<>();
-        
+        visited.put(target,false);
 
     }
     private void getParent(TreeNode root, Map<TreeNode,TreeNode>parent_track){
