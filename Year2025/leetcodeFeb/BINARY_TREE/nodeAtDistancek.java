@@ -22,6 +22,7 @@ public class nodeAtDistancek {
         q.add(target);
         Map<TreeNode,Boolean>visited=new HashMap<>();
         visited.put(target,true);
+        int curr_level=0;
         
 
     }
