@@ -29,7 +29,7 @@ public class nodeAtDistancek {
             parent_track.put(curr.left,curr);
         }
         if(curr.right!=null){
-            parent_track.put(curr.left,curr);
+            parent_track.put(curr.right,curr);
         }
     }
     }
