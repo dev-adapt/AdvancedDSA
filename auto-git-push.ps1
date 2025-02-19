@@ -6,7 +6,7 @@ $watcher.EnableRaisingEvents = $true
 Write-Host "Watching for changes..."
 
 $action = {
-    Start-Sleep -Seconds 2000  # Avoid multiple rapid commits
+    Start-Sleep -Seconds 20  # Avoid multiple rapid commits
     git add .
     git commit -m "Added on  $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
     git push origin main
