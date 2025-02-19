@@ -44,7 +44,7 @@ public class nodeAtDistancek {
             }
         }
         List<Integer> ans=new ArrayList<Integer>();
-        for(int i=0;i<q.)
+        for(int i=0;i<q.size())
         
     }
     private void getParent(TreeNode root, Map<TreeNode,TreeNode>parent_track){
