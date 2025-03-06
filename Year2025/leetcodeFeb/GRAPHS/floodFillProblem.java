@@ -1,6 +1,6 @@
 package GRAPHS;
 
-public class floodFill {
+public class floodFillProblem {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
         int dRow[]={-1,1,0,0};
         int dCol[]={0,0,-1,1};
