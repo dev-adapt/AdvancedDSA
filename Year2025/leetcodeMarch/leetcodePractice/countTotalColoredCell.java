@@ -1,6 +1,6 @@
 package leetcodePractice;
 
-import java.util.*;
+
 
 public class countTotalColoredCell {
     public long coloredCells(int n) {
