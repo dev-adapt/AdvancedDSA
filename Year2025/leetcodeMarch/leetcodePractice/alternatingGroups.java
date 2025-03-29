@@ -1,4 +1,4 @@
-package leetcodePractice;
+// package leetcodePractice;
 
 public class alternatingGroups {
     public int numberOfAlternatingGroups(int[] colors, int k) {

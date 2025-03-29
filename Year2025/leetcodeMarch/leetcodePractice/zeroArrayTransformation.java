@@ -1,4 +1,4 @@
-package leetcodePractice;
+// package leetcodePractice;
 public class zeroArrayTransformation {
     public int minZeroArray(int[] nums, int[][] queries) {
         int []count=new int[1];

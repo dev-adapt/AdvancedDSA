@@ -1,4 +1,4 @@
-package leetcodePractice;
+// package leetcodePractice;
 
 public class allotCandies {
     public int maximumCandies(int[] candies, long k) {

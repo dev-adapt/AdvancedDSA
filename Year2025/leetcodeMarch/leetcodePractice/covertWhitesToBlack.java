@@ -1,6 +1,4 @@
-package leetcodePractice;
 
-import java.util.Arrays;
 
 public class covertWhitesToBlack {
     public static int minimumRecolors(String blocks, int k) {

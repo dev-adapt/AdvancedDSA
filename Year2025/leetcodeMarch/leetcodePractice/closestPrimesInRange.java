@@ -1,4 +1,4 @@
-package leetcodePractice;
+// package leetcodePractice;
 
 public class closestPrimesInRange {
     public static int[] closestPrimes(int left, int right) {
