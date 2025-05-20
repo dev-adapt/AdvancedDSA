@@ -22,4 +22,28 @@ public class minCostPAth {
 
         return dp[i][j]=Math.min(up, left);
     }
+    public int minimumCost(int[][]grid){
+        int n=grid.length;
+        int m=grid[0].length;
+        int[]prev=new int[m];
+       Arrays.fill(prev, -1);
+
+
+       for(int i=0;i<n;i++){
+        int temp[]=new int[m];
+        for(int j=0;j<m;j++){
+           if(i==0 && j==0){
+            prev[j]=grid[i][j];
+            continue;
+           }
+        int up=7840900,left=7840900;
+         if(i>0)up=grid[i][j]+prev[j];
+         if(j>0)left=grid[i][j]+temp[j-1];
+
+         temp[j]=Math.min(up, left);
+        }
+        prev=temp;
+       }
+       return prev[m-1];
+    }
 }
