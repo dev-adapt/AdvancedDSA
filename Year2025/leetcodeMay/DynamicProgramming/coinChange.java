@@ -17,7 +17,7 @@ public class coinChange {
         if(dp[idx][target]!=-1)return dp[idx][target];
         int nottake=helper(idx-1,target,arr,dp);
         int take=(int)(1e9);
-        if(arr[idx]<=target) take=1+helper(idx, target, arr, dp);
+        if(arr[idx]<=target) take=1+helper(idx, target-arr[idx], arr, dp);
         return dp[idx][target]=Math.min(take, nottake);
     }
 }
