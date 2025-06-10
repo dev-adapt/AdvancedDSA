@@ -4,6 +4,7 @@ public class editDistance {
      public int minDistance(String s, String t) {
         int n=s.length(), m=t.length();
         int prev[]=new int[m+1];
+         if(n==0)return m;
         for(int j=0;j<=m;j++)prev[j]=j;
         int curr[]=new int[m+1];
 
