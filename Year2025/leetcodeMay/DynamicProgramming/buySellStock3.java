@@ -1,3 +1,4 @@
+package Year2025.leetcodeMay.DynamicProgramming;
 public class buySellStock3 {
     public int maxProfit(int[] arr) {
         int n=arr.length;

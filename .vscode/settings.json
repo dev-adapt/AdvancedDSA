@@ -27,5 +27,6 @@
         "sound": "off",
         "announcement": "off"
     },
-    "git.autofetchPeriod": 10000
+    "git.autofetchPeriod": 10000,
+    "java.debug.settings.onBuildFailureProceed": true
 }
