@@ -1,8 +1,7 @@
 package Year2025.leetcodeJune.String;
 
 public class versionControl {
-  
-    public int compareVersion(String version1, String version2) {
+     public int compareVersion(String version1, String version2) {
          int temp1 = 0,temp2 = 0;
     int len1 = version1.length(),len2 = version2.length();
     int i = 0,j = 0;
@@ -29,4 +28,3 @@ public class versionControl {
     return 0;
     }
 }
-

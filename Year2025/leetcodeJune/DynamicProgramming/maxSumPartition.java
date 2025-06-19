@@ -1,3 +1,5 @@
+package Year2025.leetcodeJune.DynamicProgramming;
+
 public class maxSumPartition {
      public int maxSumAfterPartitioning(int[] arr, int k) {
         int n=arr.length;
