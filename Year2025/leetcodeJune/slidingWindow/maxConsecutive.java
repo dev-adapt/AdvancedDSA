@@ -14,5 +14,6 @@ public class maxConsecutive {
             }
             r++;
         }
+        return maxLen;
     }
 }
