@@ -3,20 +3,23 @@ package Year2025.leetcodeJune.GREEDY;
 import java.util.Stack;
 
 public class validPArenthesisString {
-    public boolean checkValidString(String s) {
-        int n=s.length();
-        Stack<Character>st=new Stack<>();
-        int count=0;
-        for(int i=0;i<n;i++){
-            if(s.charAt(i)=='('){
-                st.push('(');
-            }else if(s.charAt(i)=='*')count++;
-            else{
-                if(st.isEmpty())return false;
-                else st.pop();
+     public boolean checkValidString(String s) {
+          int cmin = 0, cmax = 0;
+        for (int i = 0; i < s.length(); ++i) {
+            char c = s.charAt(i);
+            if (c == '(') {
+                cmax++;
+                cmin++;
+            } else if (c == ')') {
+                cmax--;
+                cmin = Math.max(cmin - 1, 0);
+            } else {
+                cmax++;
+                cmin = Math.max(cmin - 1, 0);
             }
+            if (cmax < 0) return false;
         }
-        return (st.size()<=count)?true:false;
+        return cmin==0;
     }
 }
 
